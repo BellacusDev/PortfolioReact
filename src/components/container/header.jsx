@@ -33,11 +33,11 @@ const NavList = styled.ul`
 `;
 
 const NavItem = styled.li`
-  margin-right: 30px;
+
 
   @media (max-width: 768px) {
     margin-bottom: 15px;
-    
+  
   }
   
 `;
@@ -46,6 +46,12 @@ const NavLink = styled.a`
   font-size: 24px;
   text-decoration: none;
   color: #fff;
+  padding: 45px 30px;
+
+  &:hover {
+      background: #45567d; /* Cambia el fondo a azul cuando pasas el ratón */
+    }
+  
 `;
 
 const Header = () => {

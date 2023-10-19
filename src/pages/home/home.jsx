@@ -1,6 +1,15 @@
 import React from 'react';
-import styled, { StyledOptions } from 'styled-components';
+import styled from 'styled-components';
 import Header from '../../components/container/header';
+import Footer from '../../components/container/footer';
+
+/* material ui */
+import FacebookIcon from '@mui/icons-material/Facebook';
+import GitHubIcon from '@mui/icons-material/GitHub';
+
+const PageStiled = styled.div`
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+`;
 
 const SectionStyles = styled.section`
   display: flex;
@@ -9,8 +18,13 @@ const SectionStyles = styled.section`
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: #000;
-  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  
+`;
+
+const DivStyled = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
 `;
 
 const textStyles = `
@@ -45,20 +59,57 @@ const PStyles = styled.p`
   }
 `;
 
+const H2Contact = styled.h2`
+  color: white;
+  font-size: 4rem;
+`;
+
+const LinkContact = styled.a`
+  text-decoration: none;
+  color: white;
+  padding-right: 20px;
+  font-size: 2rem;
+`;
+
+const FacebookIconStyled = styled(FacebookIcon)`
+  color: white;
+  font-size: 30px;
+  margin-right: 2px;
+  margin-top: -3px;
+`;
+
+const GitHubIconStyled = styled(GitHubIcon)`
+  color: white;
+  font-size: 30px;
+  margin-right: 2px;
+  margin-top: -3px;
+  padding-left: 20px;
+`;
+
+
+
 
 
 const Home = () => {
   return (
-    <div>
+    <PageStiled>
       <Header></Header>
       <SectionStyles id='wellcome'>
         <H1Styles>¡Hola!, me llamo <br/>Sergio Martínez Lara</H1Styles>
         <PStyles>Te invito a adentrarte en mi portafolio</PStyles>
       </SectionStyles>
       <SectionStyles id='contact'>
-
+        <H2Contact>Trabajemos juntos...</H2Contact>
+        <PStyles>Bellacus.Dev@gmail.com</PStyles>
+        <DivStyled>
+          <FacebookIconStyled sx={{ fontSize: 50 }}/>
+          <LinkContact href='https://www.facebook.com/BellacusDev'>Facebook</LinkContact>
+          <GitHubIconStyled sx={{ fontSize: 50 }}/>
+          <LinkContact href='https://github.com/BellacusDev'>GitHub</LinkContact>
+        </DivStyled>
       </SectionStyles>
-    </div>
+      <Footer></Footer>
+    </PageStiled>
   );
 }
 
