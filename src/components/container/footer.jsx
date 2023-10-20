@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import LogoReact from '../pure/LogoReact';
 
 const FooterStyled = styled.footer`
   width: 100%;
@@ -24,7 +25,7 @@ const PStyled = styled.p`
   color: white;
 
   @media (max-width: 600px) {
-    font-size: 10px;
+    font-size: 18px;
   }
 `;
 
@@ -32,7 +33,7 @@ const PStyled = styled.p`
 const Footer = () => {
   return (
     <FooterStyled>
-      <PStyled>Este es mi Portafolio creado con React.</PStyled>
+      <LogoReact></LogoReact>
       <PStyled>
         &copy; BellacusDev<br/>
         Sergio Martínez Lara

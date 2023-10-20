@@ -2,35 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 import Header from '../../components/container/header';
 import Footer from '../../components/container/footer';
+import Contact from '../../components/container/contact';
 
-/* material ui */
-import FacebookIcon from '@mui/icons-material/Facebook';
-import GitHubIcon from '@mui/icons-material/GitHub';
+/* Styles */
+import { PageStiled, SectionStyles } from '../../styles/CommonPages';
 
-const PageStiled = styled.div`
-  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
-`;
 
-const SectionStyles = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  
-`;
-
-const DivStyled = styled.div`
-  display: flex;
-  flex-direction: row;
-  margin-top: 50px;
-`;
 
 const textStyles = `
   font-weight: 200;
   font-style: italic;
-`
+`;
 
 const H1Styles = styled.h1`
   ${textStyles}
@@ -59,55 +41,29 @@ const PStyles = styled.p`
   }
 `;
 
-const H2Contact = styled.h2`
-  color: white;
-  font-size: 4rem;
-`;
 
-const LinkContact = styled.a`
-  text-decoration: none;
-  color: white;
-  padding-right: 20px;
-  font-size: 2rem;
-`;
-
-const FacebookIconStyled = styled(FacebookIcon)`
-  color: white;
-  font-size: 30px;
-  margin-right: 2px;
-  margin-top: -3px;
-`;
-
-const GitHubIconStyled = styled(GitHubIcon)`
-  color: white;
-  font-size: 30px;
-  margin-right: 2px;
-  margin-top: -3px;
-  padding-left: 20px;
-`;
 
 
 
 
 
 const Home = () => {
+
+  const headerLinks = [
+    { id: 1, url: '#wellcome', text: 'Bienvenida' },
+    { id: 2, url: '/work', text: 'Mi trabajo' },
+    { id: 3, url: '/certificates', text: 'Certificados' },
+    { id: 4, url: '#contact', text: 'Contacto' },
+  ]
+
   return (
     <PageStiled>
-      <Header></Header>
+      <Header links={headerLinks}></Header>
       <SectionStyles id='wellcome'>
         <H1Styles>¡Hola!, me llamo <br/>Sergio Martínez Lara</H1Styles>
         <PStyles>Te invito a adentrarte en mi portafolio</PStyles>
       </SectionStyles>
-      <SectionStyles id='contact'>
-        <H2Contact>Trabajemos juntos...</H2Contact>
-        <PStyles>Bellacus.Dev@gmail.com</PStyles>
-        <DivStyled>
-          <FacebookIconStyled sx={{ fontSize: 50 }}/>
-          <LinkContact href='https://www.facebook.com/BellacusDev'>Facebook</LinkContact>
-          <GitHubIconStyled sx={{ fontSize: 50 }}/>
-          <LinkContact href='https://github.com/BellacusDev'>GitHub</LinkContact>
-        </DivStyled>
-      </SectionStyles>
+      <Contact></Contact>
       <Footer></Footer>
     </PageStiled>
   );

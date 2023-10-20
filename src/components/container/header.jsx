@@ -10,11 +10,16 @@ const HeaderWrapper = styled.header`
   align-items: center;
   position: fixed;
   top: 0;
+  z-index: 1000;
 `;
 
 const HeaderImage = styled.img`
-  width: 80px;
+  width: 100px;
   margin-right: 80px;
+
+  @media (max-width: 972px) {
+    width: 120px;
+  }
 `;
 
 const NavList = styled.ul`
@@ -25,19 +30,16 @@ const NavList = styled.ul`
   margin-left: auto;
   margin-right: 100px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 972px) {
     flex-direction: column;
     align-items: flex-start;
-    margin-right: 10px;
-  }
+    margin-right: 30px;
 `;
 
-const NavItem = styled.li`
-
-
-  @media (max-width: 768px) {
-    margin-bottom: 15px;
+const NavItem = styled.li` 
   
+  @media (max-width: 972px) {
+    margin-bottom: 5px;
   }
   
 `;
@@ -47,27 +49,26 @@ const NavLink = styled.a`
   text-decoration: none;
   color: #fff;
   padding: 45px 30px;
-
   &:hover {
-      background: #45567d; /* Cambia el fondo a azul cuando pasas el ratón */
-    }
-  
+      background: #45567d;
+    } 
+
+  @media (max-width: 972px) {
+      margin-right: 0px;
+      padding: 8px;
+  }
 `;
 
-const Header = () => {
+const Header = ({ links }) => {
   return (
     <HeaderWrapper>
         <HeaderImage src={'yo.jpg'} alt="Mi Imagen" />
         <NavList>
-          <NavItem>
-            <NavLink href='#wellcome'>Bienvenida</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href='#contact'>Contacto</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink>Mi Trabajo</NavLink>
-          </NavItem>
+          {links.map((link) => (
+              <NavItem key={link.id}>
+                <NavLink href={link.url}>{link.text}</NavLink>
+              </NavItem>
+          ))}    
         </NavList>
     </HeaderWrapper>
   );
