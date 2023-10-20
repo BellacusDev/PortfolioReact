@@ -14,7 +14,7 @@ import ImageItem from './components/pure/ImageItem';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route exact path='/' Component={Home}></Route>
           <Route exact path='/work' Component={MyWork}></Route>
