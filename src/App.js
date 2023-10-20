@@ -11,14 +11,16 @@ import MyWork from './pages/work/myWork';
 import Certificates from './pages/work/certificates';
 import ImageItem from './components/pure/ImageItem';
 
+
+
 function App() {
   return (
     <div className="App">
       <Router basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route exact path='/' Component={Home}></Route>
-          <Route exact path='/work' Component={MyWork}></Route>
-          <Route exact path='/certificates' Component={Certificates}></Route>
+          <Route exact path='work' Component={MyWork}></Route>
+          <Route exact path='certificates' Component={Certificates}></Route>
 
           <Route exact path='/img' Component={ImageItem}></Route>
         </Routes>
