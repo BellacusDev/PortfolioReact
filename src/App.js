@@ -1,9 +1,9 @@
 import './App.css';
-import { 
-  BrowserRouter as Router, 
-  Route, 
+import {
+  HashRouter as Router, // Cambiamos BrowserRouter por HashRouter
+  Route,
   Routes,
- } from 'react-router-dom';
+} from 'react-router-dom';
 
 /* pages */
 import Home from './pages/home/home';
@@ -11,18 +11,15 @@ import MyWork from './pages/work/myWork';
 import Certificates from './pages/work/certificates';
 import ImageItem from './components/pure/ImageItem';
 
-
-
 function App() {
   return (
     <div className="App">
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <Routes>
-          <Route exact path='/' Component={Home}></Route>
-          <Route exact path='work' Component={MyWork}></Route>
-          <Route exact path='certificates' Component={Certificates}></Route>
-
-          <Route exact path='/img' Component={ImageItem}></Route>
+          <Route path="/" element={<Home />} /> {/* Cambiamos "Component" a "element" y quitamos "exact" */}
+          <Route path="work" Component={MyWork} />
+          <Route path="certificates" element={<Certificates />} />
+          <Route path="img" element={<ImageItem />} />
         </Routes>
       </Router>
     </div>
@@ -30,3 +27,4 @@ function App() {
 }
 
 export default App;
+

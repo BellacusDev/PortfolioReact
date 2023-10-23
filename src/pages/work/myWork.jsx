@@ -13,8 +13,8 @@ const MyWork = () => {
 
   const headerLinks = [
     { id: 1, url: '#work', text: 'Mi trabajo' },
-    { id: 2, url: 'PortfolioReact', text: 'Bienvenida' },
-    { id: 3, url: 'certificates', text: 'certificados' },
+    { id: 2, url: '#/', text: 'Bienvenida' },
+    { id: 3, url: '#/certificates', text: 'certificados' },
     { id: 3, url: '#contact', text: 'Contacto' }
   ]
 

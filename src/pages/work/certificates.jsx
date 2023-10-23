@@ -19,10 +19,10 @@ const Galery = styled.div`
 
 const Certificates = () => {
   const headerLinks = [
-    { id: 1, url: '#certificates', text: 'Certificados' },
-    { id: 2, url: 'home', text: 'Bienvenida' },
-    { id: 3, url: 'work', text: 'Mi trabajo' },
-    { id: 3, url: '#contact', text: 'Contacto' }
+    { id: 1, url: '/#certificates', text: 'Certificados' },
+    { id: 2, url: '#/', text: 'Bienvenida' },
+    { id: 3, url: '#/work', text: 'Mi trabajo' },
+    { id: 3, url: '#/#contact', text: 'Contacto' }
   ]
 
     const imageItems = [
