@@ -26,13 +26,13 @@ const Certificates = () => {
   ]
 
     const imageItems = [
-      { id: 1, url: '/', title: 'Diseño Web Responsive', img: 'responsive.png' },
-      { id: 2, url: '/', title: 'JavaScript', img: 'JsAlgorithms.png' },
-      { id: 3, url: '/', title: 'Desarrollo Web', img: 'web.png' },
-      { id: 4, url: '/', title: 'Control de Versiones', img: 'git.jpg' },
-      { id: 5, url: '/', title: 'Paradigma PPO', img: 'objetos.png' },
-      { id: 6, url: '/', title: 'Backend con Python', img: 'django.jpg' }, 
-      { id: 7, url: '/', title: 'Python', img: 'python.png' },
+      { id: 1, url: '/public/responsive.png', title: 'Diseño Web Responsive', img: 'responsive.png' },
+      { id: 2, url: '//public/JsAlgorithms.png', title: 'JavaScript', img: 'JsAlgorithms.png' },
+      { id: 3, url: '/public/web.png', title: 'Desarrollo Web', img: 'web.png' },
+      { id: 4, url: '/public/git.jpg', title: 'Control de Versiones', img: 'git.jpg' },
+      { id: 5, url: '/public/objetos.png', title: 'Paradigma PPO', img: 'objetos.png' },
+      { id: 6, url: '/public/django.jpg', title: 'Backend con Python', img: 'django.jpg' }, 
+      { id: 7, url: '/public/python.png', title: 'Python', img: 'python.png' },
       
       
       

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const Div = styled.div`
   display: flex;
@@ -29,6 +30,7 @@ const Title = styled.div`
 const H1 = styled.h1`
   color: white;
   margin: 0;
+  text-align: center;
 `;
 
 const ImageItem = ({ links }) => {
@@ -36,7 +38,10 @@ const ImageItem = ({ links }) => {
     <Div>
         { links.map((link) => (
           <div key={link.id}>
-            <Img src={link.img} href={link.url} />
+            <Link to={link.url} target='_blank' >
+              <Img src={link.img}  />
+            </Link>
+            
             <Title>
               <H1>{link.title}</H1>
             </Title>
