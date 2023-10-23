@@ -50,10 +50,10 @@ const PStyles = styled.p`
 const Home = () => {
 
   const headerLinks = [
-    { id: 1, url: '#/#wellcome', text: 'Bienvenida' },
-    { id: 2, url: '#/work', text: 'Mi trabajo' },
-    { id: 3, url: '#/certificates', text: 'Certificados' },
-    { id: 4, url: '#/#contact', text: 'Contacto' },
+    { id: 1, url: '/', text: 'Bienvenida' },
+    { id: 2, url: '/work', text: 'Mi trabajo' },
+    { id: 3, url: '/certificates', text: 'Certificados' },
+    { id: 4, url: '/contact', text: 'Contacto' }  
   ]
 
   return (

@@ -1,15 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
 import Header from '../../components/container/header';
 import Footer from '../../components/container/footer';
 import Contact from '../../components/container/contact';
-
-/* Styles */
-import { PageStiled, SectionStyles } from '../../styles/CommonPages'
+import { PageStiled } from '../../styles/CommonPages';
 
 
 
-const MyWork = () => {
+const ContactPage = () => {
 
   const headerLinks = [
     { id: 1, url: '/', text: 'Bienvenida' },
@@ -21,11 +18,10 @@ const MyWork = () => {
   return (
     <PageStiled>
       <Header links={headerLinks}></Header>
-      <SectionStyles id='work'></SectionStyles>
       <Contact></Contact>
       <Footer></Footer>
     </PageStiled>
   );
 }
 
-export default MyWork;
+export default ContactPage;

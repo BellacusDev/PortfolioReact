@@ -1,6 +1,5 @@
 import './App.css';
 import {
-  HashRouter as Router, // Cambiamos BrowserRouter por HashRouter
   Route,
   Routes,
 } from 'react-router-dom';
@@ -9,20 +8,18 @@ import {
 import Home from './pages/home/home';
 import MyWork from './pages/work/myWork';
 import Certificates from './pages/work/certificates';
+import ContactPage from './pages/home/ContactPage';
 import ImageItem from './components/pure/ImageItem';
 
 function App() {
   return (
-    <div className="App">
-      <Router>
         <Routes>
           <Route path="/" element={<Home />} /> {/* Cambiamos "Component" a "element" y quitamos "exact" */}
-          <Route path="work" Component={MyWork} />
+          <Route path="work" element={<MyWork />} />
           <Route path="certificates" element={<Certificates />} />
+          <Route path="contact" element={<ContactPage />} />
           <Route path="img" element={<ImageItem />} />
         </Routes>
-      </Router>
-    </div>
   );
 }
 

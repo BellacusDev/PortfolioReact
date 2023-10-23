@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const HeaderWrapper = styled.header`
   width: 100%;
@@ -44,7 +45,7 @@ const NavItem = styled.li`
   
 `;
 
-const NavLink = styled.a`
+const NavLink = styled(Link)`
   font-size: 24px;
   text-decoration: none;
   color: #fff;
@@ -66,7 +67,7 @@ const Header = ({ links }) => {
         <NavList>
           {links.map((link) => (
               <NavItem key={link.id}>
-                <NavLink href={link.url}>{link.text}</NavLink>
+                <NavLink to={link.url}>{link.text}</NavLink>
               </NavItem>
           ))}    
         </NavList>
