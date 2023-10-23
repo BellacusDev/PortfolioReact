@@ -38,8 +38,8 @@ const ImageItem = ({ links }) => {
     <Div>
         { links.map((link) => (
           <div key={link.id}>
-            <Link to={process.env.PUBLIC_URL + link.url} target='_blank' >
-              <Img src={process.env.PUBLIC_URL + link.img}  />
+            <Link to={link.url} target='_blank' >
+              <Img src={link.img}  />
             </Link>
             
             <Title>
