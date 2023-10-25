@@ -8,7 +8,6 @@ import Contact from '../../components/container/contact';
 import { PageStiled, SectionStyles } from '../../styles/CommonPages';
 
 
-
 const textStyles = `
   font-weight: 200;
   font-style: italic;
@@ -27,7 +26,6 @@ const H1Styles = styled.h1`
   }
 `;
 
-
 const PStyles = styled.p`
   ${textStyles}
   font-size: 3rem;
@@ -40,11 +38,6 @@ const PStyles = styled.p`
     font-size: 1rem;
   }
 `;
-
-
-
-
-
 
 
 const Home = () => {

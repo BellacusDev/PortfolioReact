@@ -25,7 +25,7 @@ const MyWork = () => {
   ]
 
   const imageItems = [
-    { id: 1, url: '/public/portfolio.png', title: 'Portafolio', img: 'portfolio.png' },  
+    { id: 1, url: 'portfolio.png', title: 'Portafolio', img: 'portfolio.png' },  
   ]
 
   return (
