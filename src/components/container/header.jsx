@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import yoImagen from '../../media/yo.jpg'
 
 const HeaderWrapper = styled.header`
   width: 100%;
@@ -63,7 +64,7 @@ const NavLink = styled(Link)`
 const Header = ({ links }) => {
   return (
     <HeaderWrapper>
-        <HeaderImage src={'yo.jpg'} alt="Mi Imagen" />
+        <HeaderImage src={yoImagen} alt="Mi Imagen" />
         <NavList>
           {links.map((link) => (
               <NavItem key={link.id}>
