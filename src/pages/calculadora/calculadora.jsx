@@ -1,9 +1,16 @@
 import React from 'react';
 import Header from '../../components/container/header';
 import Footer from '../../components/container/footer';
-import Contact from '../../components/container/contact';
 import { PageStiled } from '../../styles/CommonPages';
 
+import { useState } from 'react';
+import { evaluate } from 'mathjs';
+
+import BotonCalculadora from '../../components/pure/BotonCalculadora';
+import BotonClearCalculadora from '../../components/pure/BotonClearCalculadora';
+import PantallaCalculadora from '../../components/pure/PantallaCalculadora';
+
+import '../../styles/calculadora.css'
 
 
 const Calculadora = () => {
@@ -31,42 +38,36 @@ const Calculadora = () => {
     <PageStiled>
       <Header links={headerLinks}></Header>
       <div className="App">
-        {/* <div className='freecodecamp-logo-contenedor'>
-        <img
-          src={freeCodeCampLogo}
-          className='freecodecamp-logo'
-          alt='Logo de freecodecamp' />
-      </div> */}
         <div className='contenedor-calculadora'>
-          <Pantalla input={input} />
+          <PantallaCalculadora input={input} />
           <div className='fila'>
-            <Boton manejarClic={agregarInput} input={input}>1</Boton>
-            <Boton manejarClic={agregarInput} input={input}>2</Boton>
-            <Boton manejarClic={agregarInput} input={input}>3</Boton>
-            <Boton manejarClic={agregarInput} input={input}>+</Boton>
+            <BotonCalculadora manejarClic={agregarInput} input={input}>1</BotonCalculadora>
+            <BotonCalculadora manejarClic={agregarInput} input={input}>2</BotonCalculadora>
+            <BotonCalculadora manejarClic={agregarInput} input={input}>3</BotonCalculadora>
+            <BotonCalculadora manejarClic={agregarInput} input={input}>+</BotonCalculadora>
           </div>
           <div className='fila'>
-            <Boton manejarClic={agregarInput} input={input}>4</Boton>
-            <Boton manejarClic={agregarInput} input={input}>5</Boton>
-            <Boton manejarClic={agregarInput} input={input}>6</Boton>
-            <Boton manejarClic={agregarInput} input={input}>-</Boton>
+            <BotonCalculadora manejarClic={agregarInput} input={input}>4</BotonCalculadora>
+            <BotonCalculadora manejarClic={agregarInput} input={input}>5</BotonCalculadora>
+            <BotonCalculadora manejarClic={agregarInput} input={input}>6</BotonCalculadora>
+            <BotonCalculadora manejarClic={agregarInput} input={input}>-</BotonCalculadora>
           </div>
           <div className='fila'>
-            <Boton manejarClic={agregarInput} input={input}>7</Boton>
-            <Boton manejarClic={agregarInput} input={input}>8</Boton>
-            <Boton manejarClic={agregarInput} input={input}>9</Boton>
-            <Boton manejarClic={agregarInput} input={input}>*</Boton>
+            <BotonCalculadora manejarClic={agregarInput} input={input}>7</BotonCalculadora>
+            <BotonCalculadora manejarClic={agregarInput} input={input}>8</BotonCalculadora>
+            <BotonCalculadora manejarClic={agregarInput} input={input}>9</BotonCalculadora>
+            <BotonCalculadora manejarClic={agregarInput} input={input}>*</BotonCalculadora>
           </div>
           <div className='fila'>
-            <Boton manejarClic={agregarInput} input={input}>.</Boton>
-            <Boton manejarClic={agregarInput} input={input}>0</Boton>
-            <Boton manejarClic={calcularResultado}>=</Boton>
-            <Boton manejarClic={agregarInput} input={input}>/</Boton>
+            <BotonCalculadora manejarClic={agregarInput} input={input}>.</BotonCalculadora>
+            <BotonCalculadora manejarClic={agregarInput} input={input}>0</BotonCalculadora>
+            <BotonCalculadora manejarClic={calcularResultado}>=</BotonCalculadora>
+            <BotonCalculadora manejarClic={agregarInput} input={input}>/</BotonCalculadora>
           </div>
           <div className='fila'>
-            <BotonClear manejarClear={() => setInput('')}>
+            <BotonClearCalculadora manejarClear={() => setInput('')}>
               Borrar
-            </BotonClear>
+            </BotonClearCalculadora>
           </div>
         </div>
       </div>

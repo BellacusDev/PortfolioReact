@@ -10,6 +10,7 @@ import MyWork from './pages/work/myWork';
 import Certificates from './pages/work/certificates';
 import ContactPage from './pages/home/ContactPage';
 import ImageItem from './components/pure/ImageItem';
+import Calculadora from './pages/calculadora/calculadora.jsx'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="certificates" element={<Certificates />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path="img" element={<ImageItem />} />
+          <Route path="calculadora" element={<Calculadora />} />
         </Routes>
   );
 }

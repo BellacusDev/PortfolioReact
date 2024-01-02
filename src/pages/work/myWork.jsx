@@ -6,8 +6,11 @@ import Contact from '../../components/container/contact';
 
 /* Styles */
 import { PageStiled, SectionStyles } from '../../styles/CommonPages'
-
 import ImageItem from '../../components/pure/ImageItem';
+
+// imagenes
+import portafolioImagen from '../../media/portfolio.png';
+import calculadoraImagen from '../../media/calculadoraReact.png';
 
 
 
@@ -25,7 +28,8 @@ const MyWork = () => {
   ]
 
   const imageItems = [
-    { id: 1, url: 'portfolio.png', title: 'Portafolio', img: 'portfolio.png' },  
+    { id: 1, url: '/calculadora', title: 'Calculadora', img: calculadoraImagen },
+    { id: 2, url: 'portfolio.png', title: 'Portafolio', img: portafolioImagen },  
   ]
 
   return (
