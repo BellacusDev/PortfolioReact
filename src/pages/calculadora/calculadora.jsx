@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from '../../components/container/header';
 import Footer from '../../components/container/footer';
 import { PageStiled } from '../../styles/CommonPages';
 
@@ -11,16 +10,10 @@ import BotonClearCalculadora from '../../components/pure/BotonClearCalculadora';
 import PantallaCalculadora from '../../components/pure/PantallaCalculadora';
 
 import '../../styles/calculadora.css'
+import BotonVolverCalculadora from '../../components/pure/BotonVolverCalculadora';
 
 
 const Calculadora = () => {
-
-  const headerLinks = [
-    { id: 1, url: '/', text: 'Bienvenida' },
-    { id: 2, url: '/work', text: 'Mi trabajo' },
-    { id: 3, url: '/certificates', text: 'Certificados' },
-    { id: 4, url: '/contact', text: 'Contacto' }
-  ]
 
   const [input, setInput] = useState('');
 
@@ -34,9 +27,10 @@ const Calculadora = () => {
     }
   };
 
+
+
   return (
     <PageStiled>
-      <Header links={headerLinks}></Header>
       <div className="App">
         <div className='contenedor-calculadora'>
           <PantallaCalculadora input={input} />
@@ -65,6 +59,7 @@ const Calculadora = () => {
             <BotonCalculadora manejarClic={agregarInput} input={input}>/</BotonCalculadora>
           </div>
           <div className='fila'>
+              <BotonVolverCalculadora>Volver</BotonVolverCalculadora>         
             <BotonClearCalculadora manejarClear={() => setInput('')}>
               Borrar
             </BotonClearCalculadora>

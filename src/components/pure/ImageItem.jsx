@@ -38,7 +38,7 @@ const ImageItem = ({ links }) => {
     <Div>
         { links.map((link) => (
           <div key={link.id}>
-            <Link to={link.url} target='_blank' >
+            <Link to={link.url} >
               <Img src={link.img}  />
             </Link>
             
