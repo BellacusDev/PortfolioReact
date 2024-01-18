@@ -5,9 +5,9 @@ import yoImagen from '../../media/yo.jpg'
 
 const HeaderWrapper = styled.header`
   width: 100%;
-  background-color: rgb(190,49,68);
+  background-color: rgb(50,50,50);
   color: #fff;
-  padding: 20px;
+  padding: 0px;
   display: flex;
   align-items: center;
   position: fixed;
@@ -18,15 +18,14 @@ const HeaderWrapper = styled.header`
 const HeaderImage = styled.img`
   width: 100px;
   margin-right: 80px;
-
   @media (max-width: 972px) {
-    width: 120px;
+    width: 180px;
   }
 `;
 
 const NavList = styled.ul`
   list-style: none;
-  margin: 0;
+  margin: 20px;
   padding: 0;
   display: flex;
   margin-left: auto;
@@ -50,7 +49,7 @@ const NavLink = styled(Link)`
   font-size: 24px;
   text-decoration: none;
   color: #fff;
-  padding: 45px 30px;
+  padding: 30px 30px;
   &:hover {
       background: #45567d;
     } 
