@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import LogoReact from '../pure/LogoReact';
 
 const FooterStyled = styled.footer`
-  width: 100%;
+  width: 99%;
   font-size: 24px;
   display: flex;
   justify-content: space-evenly;
