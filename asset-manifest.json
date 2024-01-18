@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PortfolioReact/static/css/main.9e05ec3c.css",
-    "main.js": "/PortfolioReact/static/js/main.3c82a462.js",
+    "main.css": "/PortfolioReact/static/css/main.8ab0765c.css",
+    "main.js": "/PortfolioReact/static/js/main.9653c276.js",
     "static/js/787.1ed0c42c.chunk.js": "/PortfolioReact/static/js/787.1ed0c42c.chunk.js",
     "static/media/portfolio.png": "/PortfolioReact/static/media/portfolio.71d1fa897ed93411f70d.png",
     "static/media/django.jpg": "/PortfolioReact/static/media/django.d69e57e2f744f023c55c.jpg",
@@ -11,16 +11,17 @@
     "static/media/git.jpg": "/PortfolioReact/static/media/git.559ae0719f46f6e1a510.jpg",
     "static/media/responsive.png": "/PortfolioReact/static/media/responsive.d1c0f187fab9b7730513.png",
     "static/media/JsAlgorithms.png": "/PortfolioReact/static/media/JsAlgorithms.fa5192e38200a021544b.png",
+    "static/media/tareasAPP.png": "/PortfolioReact/static/media/tareasAPP.66ab779b73d3a409aeef.png",
     "static/media/calculadoraReact.png": "/PortfolioReact/static/media/calculadoraReact.310f422aeb7ac7db800f.png",
     "static/media/yo.jpg": "/PortfolioReact/static/media/yo.a04d1720d3b77693f2ca.jpg",
     "static/media/logoReact.svg": "/PortfolioReact/static/media/logoReact.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/PortfolioReact/index.html",
-    "main.9e05ec3c.css.map": "/PortfolioReact/static/css/main.9e05ec3c.css.map",
-    "main.3c82a462.js.map": "/PortfolioReact/static/js/main.3c82a462.js.map",
+    "main.8ab0765c.css.map": "/PortfolioReact/static/css/main.8ab0765c.css.map",
+    "main.9653c276.js.map": "/PortfolioReact/static/js/main.9653c276.js.map",
     "787.1ed0c42c.chunk.js.map": "/PortfolioReact/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e05ec3c.css",
-    "static/js/main.3c82a462.js"
+    "static/css/main.8ab0765c.css",
+    "static/js/main.9653c276.js"
   ]
 }
