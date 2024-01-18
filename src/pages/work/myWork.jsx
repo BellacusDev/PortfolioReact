@@ -11,6 +11,7 @@ import ImageItem from '../../components/pure/ImageItem';
 // imagenes
 import portafolioImagen from '../../media/portfolio.png';
 import calculadoraImagen from '../../media/calculadoraReact.png';
+import tareasAPPimagen from '../../media/tareasAPP.png'
 
 
 
@@ -29,7 +30,8 @@ const MyWork = () => {
 
   const imageItems = [
     { id: 1, url: '/calculadora', title: 'Calculadora', img: calculadoraImagen },
-    { id: 2, url: 'portfolio.png', title: 'Portafolio', img: portafolioImagen },  
+    { id: 2, url: '/tareas', title: 'Aplicacion de Tareas', img: tareasAPPimagen },
+    { id: 3, url: 'portfolio.png', title: 'Portafolio', img: portafolioImagen },  
   ]
 
   return (
